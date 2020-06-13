@@ -252,6 +252,11 @@ button {
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
 /* header */
 
 header {
@@ -350,7 +355,7 @@ nav a.selected {
     display: inline-block;
 }
 
-.arrow {
+.slider__arrow {
     display: inline-block;
     width: 16px;
     height: 27px;
@@ -358,20 +363,75 @@ nav a.selected {
     background: transparent url("assets/images/arrow.svg") no-repeat center center;
 }
 
-.arrow:hover {
+.slider__arrow:hover {
     opacity: 1;
 }
 
-.arrow.arrow_left {
+.slider__arrow_left {
     color: var(--primary);
 }
 
-.arrow.arrow_right {
+.slider__arrow_right {
     right: 0;
     transform: scale(-1,1);
 }
 
-.hidden {
-    display: none;
-    opacity: 0;
+/* services */
+
+.services {
+    padding-top: 59px;
+    padding-bottom: 30px;
+    background-color: var(--light-background);
+}
+
+.services__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 47px;
+    padding-left: 1px;
+}
+
+.services__item {
+    width: 300px;
+    margin-bottom: 31px;
+    padding-left: 80px;
+    background: transparent no-repeat top left;
+}
+
+.services__item_custom-design {
+    background-image: url("assets/images/icon-custom-design.svg");
+}
+
+.services__item_inovative-ideas {
+    background-image: url("assets/images/icon-inovative-ideas.svg");
+}
+
+.services__item_love-is-the-answer {
+    background-image: url("assets/images/icon-love-is-the-answer.svg");
+}
+
+.services__item_responsive-layout {
+    background-image: url("assets/images/icon-responsive-layout.svg");
+}
+
+.services__item_support-24-7 {
+    background-image: url("assets/images/icon-24-7-support.svg");
+}
+
+.services__item_feel-like-a-star {
+    background-image: url("assets/images/icon-feel-like-a-star.svg");
+}
+
+.services__item p {
+    margin-block-start: 12px;
+    margin-block-end: 0;
+    max-height: 65px;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    line-height: 1.84em;
+    text-align: justify;
+    hyphens: manual;
 }
